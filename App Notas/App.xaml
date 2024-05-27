@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App_Notas"
              x:Class="App_Notas.App">
+    
     <Application.MainPage>
         <local:AppShell />
     </Application.MainPage>

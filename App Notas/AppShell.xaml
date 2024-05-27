@@ -5,9 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:App_Notas.Paginas"
     Shell.FlyoutBehavior="Disabled"
-    Title="App_Notas">
+    Title="App_Notas"
+    Background="DarkOliveGreen">
 
-   
+
     <TabBar>
         <ShellContent Title="Home"
                       Icon="home.png"

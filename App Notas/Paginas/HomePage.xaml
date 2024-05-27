@@ -2,11 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Notas.Paginas.HomePage"
-             Title="HomePage">
+             Background="DarkOliveGreen"
+             Title="Home">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+            <!-- Texto de bienvenida -->
+            <Label Text="¡Bienvenido a mi aplicación .NET MAUI!"
+            FontSize="24"
             HorizontalOptions="Center" />
+
+            <!-- Texto adicional -->
+            <Label Text="Esta aplicación es de apuntes"
+            FontSize="20"
+            HorizontalOptions="Center" />
+
+
+        </StackLayout>
+
+
+
+
     </VerticalStackLayout>
 </ContentPage>
