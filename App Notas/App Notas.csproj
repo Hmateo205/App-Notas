@@ -57,9 +57,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\mas.png" />
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\notas.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiFont Include="Resources\Images\mas.png" />
 	</ItemGroup>
 
 	<ItemGroup>

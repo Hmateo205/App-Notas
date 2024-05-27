@@ -16,8 +16,7 @@
             <Label Text="Esta aplicación es de apuntes"
             FontSize="20"
             HorizontalOptions="Center" />
-
-
+           
         </StackLayout>
 
 

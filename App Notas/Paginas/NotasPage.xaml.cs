@@ -8,4 +8,9 @@ public partial class NotasPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void OnAgregarClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Paginas.ApuntesPage());
+    }
+
 }

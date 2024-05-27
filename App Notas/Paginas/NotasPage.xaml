@@ -9,5 +9,18 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <!-- Botón Contador -->
+        <Button
+        x:Name="Agregar"
+        Text="+ Agregar" 
+        SemanticProperties.Hint="Counts the number of times you click"
+        Clicked="OnAgregarClicked"
+        TextColor="Black"
+        BackgroundColor="Beige"/>
+ 
     </VerticalStackLayout>
+
+
+
 </ContentPage>
