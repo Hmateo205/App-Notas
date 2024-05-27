@@ -7,7 +7,7 @@ public partial class ApuntesPage : ContentPage
         InitializeComponent();
     }
 
-    private async void OnGuardarButtonClicked(object sender, EventArgs e)
+    private async void OnGuardarClicked(object sender, EventArgs e)
     {
         var titulo = TituloEntry.Text;
         var descripcion = DescripcionEditor.Text;
@@ -24,12 +24,6 @@ public partial class ApuntesPage : ContentPage
         MessagingCenter.Send(this, "AgregarNota", nuevaNota);
 
         // Volver a la página de Notas
-        await Navigation.PopAsync();
-    }
-
-    private async void OnEliminarButtonClicked(object sender, EventArgs e)
-    {
-        // Simplemente volver a la página de Notas sin agregar una nueva nota
         await Navigation.PopAsync();
     }
 }

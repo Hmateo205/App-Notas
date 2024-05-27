@@ -22,4 +22,16 @@ public partial class NotasPage : ContentPage
     {
         await Navigation.PushAsync(new ApuntesPage());
     }
+
+    private async void OnNotaTapped(object sender, ItemTappedEventArgs e)
+    {
+        if (e.Item != null && e.Item is Nota nota)
+        {
+            bool confirm = await DisplayAlert("Eliminar Nota", $"¿Desea eliminar la nota '{nota.Titulo}'?", "Sí", "No");
+            if (confirm)
+            {
+                Notas.Remove(nota);
+            }
+        }
+    }
 }

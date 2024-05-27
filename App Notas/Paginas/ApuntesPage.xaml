@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Notas.Paginas.ApuntesPage"
-             Title="ApuntesPage">
+             Background="DarkOliveGreen"
+             Title="Apuntes">
 
     <StackLayout Padding="10">
         <Label Text="Título" />
@@ -11,10 +12,11 @@
         <Label Text="Descripción" />
         <Editor x:Name="DescripcionEditor" Placeholder="Ingrese la descripción de la nota" />
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="Guardar" Clicked="OnGuardarButtonClicked" />
-            <Button Text="Eliminar" Clicked="OnEliminarButtonClicked" />
-        </StackLayout>
+        <Button Text="Guardar" 
+                Clicked="OnGuardarClicked" 
+                HorizontalOptions="Center"
+                TextColor="Black"
+BackgroundColor="Beige"/>
     </StackLayout>
 
 

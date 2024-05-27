@@ -3,15 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Notas.Paginas.NotasPage"
              Background="DarkOliveGreen"
-             Title="NotasPage">
+             Title="Notas">
 
 
 
     <StackLayout>
-        <ListView x:Name="NotasListView">
+        <ListView x:Name="NotasListView" ItemTapped="OnNotaTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Titulo}" Detail="{Binding Descripcion}" />
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Titulo}" FontSize="Medium" FontAttributes="Bold" />
+                            <Label Text="{Binding Descripcion}" FontSize="Small" />
+                            <BoxView HeightRequest="1" BackgroundColor="Beige" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
@@ -21,6 +27,8 @@
         Text="+ Agregar" 
         SemanticProperties.Hint="Counts the number of times you click"
         Clicked="OnAgregarClicked"
+        HorizontalOptions="End"
+        VerticalOptions="End"
         TextColor="Black"
         BackgroundColor="Beige"/>
 
