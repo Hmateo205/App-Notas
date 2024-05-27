@@ -3,7 +3,7 @@
     x:Class="App_Notas.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:App_Notas"
+    xmlns:local="clr-namespace:App_Notas.Paginas"
     Shell.FlyoutBehavior="Disabled"
     Title="App_Notas">
 
@@ -11,7 +11,13 @@
     <TabBar>
         <ShellContent Title="Home"
                       Icon="home.png"
-                      ContentTemplate="{DataTemplate local:MainPage}" />
+                      ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Notas"
+                      Icon="notas.png"
+                      ContentTemplate="{DataTemplate local:NotasPage}" />
+        <ShellContent Title="Info"
+                      Icon="info.png"
+                      ContentTemplate="{DataTemplate local:InfoPage}" />
 
     </TabBar>
 

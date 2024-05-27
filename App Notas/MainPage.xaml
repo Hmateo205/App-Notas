@@ -18,7 +18,6 @@
             HorizontalOptions="Center" />
             
             
-            
         </StackLayout>
 
     </ScrollView>
