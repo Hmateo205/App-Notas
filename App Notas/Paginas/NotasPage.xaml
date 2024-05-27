@@ -8,6 +8,9 @@
 
 
     <StackLayout>
+        <Label Text="Estas son tus notas!"
+        FontSize="24"
+        HorizontalOptions="Start" />
         <ListView x:Name="NotasListView" ItemTapped="OnNotaTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
